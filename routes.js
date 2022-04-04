@@ -32,6 +32,13 @@ const requestHandler = (request, response) => {
     response.end();
 }
 
+// module.exports = {
+//     handler: requestHandler,
+//     test: "it works"
+// }
 
-module.exports.handler = requestHandler;
-module.exports.test = "it works";
+// module.exports.handler = requestHandler;
+// module.exports.test = "it works";
+
+exports.handler = requestHandler;
+exports.test = "it works";
