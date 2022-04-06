@@ -1,0 +1,27 @@
+{
+  "name": "nodejsraw",
+  "version": "1.0.0",
+  "description": "it is a working on tutorial of shwarzmiller from udemy",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/numaanjaved/nodejsRaw.git"
+  },
+  "author": "Numaan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/numaanjaved/nodejsRaw/issues"
+  },
+  "homepage": "https://github.com/numaanjaved/nodejsRaw#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

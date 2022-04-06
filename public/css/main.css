@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display:flex;
+    background-color: blue;
+    height: auto;
+}
+.header li {
+    list-style-type: none;
+    float:left;
+}
+.header a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+}
+.main {
+    margin: 15px;
+}
