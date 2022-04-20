@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head.ejs") %>
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav">
+            <ul class="header-items-list">
+                <li><a class="header-item" href="/">Shop</a></li>
+                <li><a class="header-item" href="/admin/add-product">Add Product</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 class="main-heading">My Products</h1>
+        <% if(prods.length > 0){ %>
+            <% for(let product of prods){ %>
+                <h2><%= product.title %></h2>
+            <% } %>
+            
+        <% } else { %>
+            <h2>Products Not Found</h2>
+        <% } %>
+
+    </main>
+</body>
+</html>

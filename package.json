@@ -19,7 +19,10 @@
   "homepage": "https://github.com/numaanjaved/nodejsRaw#readme",
   "dependencies": {
     "body-parser": "^1.20.0",
-    "express": "^4.17.3"
+    "ejs": "^3.0.2",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.5",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

@@ -22,3 +22,37 @@ body {
 .main {
     margin: 15px;
 }
+.card {
+    margin: auto 0;
+    margin: 10px;
+    height: auto;
+    width: 360px;
+    background-color: red;
+}
+.card-header {
+    height: 30px;
+    /* width: 100%; */
+    background-color: blue;
+    font-weight:bold;
+    text-align: center;
+    color : white;
+}
+.card-img {
+    height: 300px;
+    width : 100%;
+    background-color: yellow;
+}
+.card-img img {
+    height: 100%;
+    width: 100%;
+}
+.card-description {
+    height: 70px;
+    width : 100%;
+    background-color: brown;
+}
+.card-footer {
+    height: 30px;
+    width: 100%;
+    background-color: blue;
+}

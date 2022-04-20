@@ -2,12 +2,8 @@
 const users = (req, res) => {
     const url = req.url;
     const method = req.method;
+    console.log(url);
     
-    if(url === '/'){
-        res.setHeader('Content-Type', 'text/html');
-        res.write('<html><head><title>First Assignment</title></head><body><h1>Hello Welcome to my first assignment</h1><form action="/create-user" method="POST"><input type="text" name="user-name"><button type="submit">Add User</button></form></body></htmll>');
-        return res.end();
-    }
     if(url === '/create-user' && method === 'POST'){
         const body = [];
         req.on('data', data => {
@@ -23,6 +19,11 @@ const users = (req, res) => {
             return res.end();            
         });
         
+    }
+    if(url === '/'){
+        res.setHeader('Content-Type', 'text/html');
+        res.write('<html><head><title>First Assignment</title></head><body><h1>Hello Welcome to my first assignment</h1><form action="/create-user" method="POST"><input type="text" name="user-name"><button type="submit">Add User</button></form></body></htmll>');
+        return res.end();
     }
     if(url === '/users'){
         res.setHeader('Content-Type', 'text/html');
