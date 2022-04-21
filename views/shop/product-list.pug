@@ -1,0 +1,15 @@
+extends ../layouts/main-layout.pug 
+
+block content
+    main.main
+        h1.main-heading My Products
+        if hasProduct
+            each product in prods
+                .card
+                    .card-header #{product.title}
+                    .card-img
+                        img(src="#{product.imageUrl}")
+                    .card-description #{product.description}
+                    .card-footer $ #{product.price}
+        else 
+            h2 No Products Yet

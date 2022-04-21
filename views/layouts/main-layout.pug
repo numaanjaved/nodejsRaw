@@ -12,7 +12,15 @@ html(lang="en")
             nav.header-nav 
                 ul.header-items-list 
                     li 
-                        a(href="/").header-item Shop 
+                        a(href="/", class=(path === "/" ? "active" : "")).header-item Shop 
                     li
-                        a(href="/admin/add-product") Add Product
+                        a(href="/products", class=(path === "/products" ? "active" : "")).header-item Products 
+                    li
+                        a(href="/orders", class=(path === "/orders" ? "active" : "")).header-item Order
+                    li
+                        a(href="/cart", class=(path === "/cart" ? "active" : "")).header-item Cart
+                    li
+                        a(href="/admin/add-product", class=(path === "/add-product" ? "active" : "")) Add Product
+                    li
+                        a(href="/admin/products", class=(path === "/admin/products" ? "active" : "")) Edit Products
         block content
