@@ -5,11 +5,19 @@ block content
         h1.main-heading My Products
         if hasProduct
             each product in prods
+                -const imgUrl = product.imageUrl
+                -const productId = product.id
+                -const productIdUrl = "/products/" + product.id   
                 .card
                     .card-header #{product.title}
                     .card-img
-                        img(src="/imgs/istockphoto-1331443382-170667a.jpg")
-                    .card-description 
-                    .card-footer
+                        img(src=imgUrl)
+                    .card-description #{product.description}
+                    .card-price $ #{product.price}
+                    .card-footer 
+                        a.btn(href=productIdUrl) Details 
+                        form(action="/cart", method="POST")
+                            input(type="hidden", name="productId" value=productId) 
+                            button(type="submit") Add to Cart 
         else 
             h2 No Products Yet
